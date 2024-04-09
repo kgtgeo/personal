@@ -4,42 +4,47 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'AI Research',
+    Svg: '',
+    image: '/personal/img/jaist-logo.jpg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Developed a novel continual learning framework for speech recognition system
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Software Engineer',
+    Svg: '',
+    image: '/personal/img/ruangguru-logo.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Managed multiple K-12 educational products across different initiatives and projects in South East Asia region
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'AI Engineer',
+    Svg: '',
+    image: '/personal/img/ristek-logo.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Launched the first university-wide application for students-based class reviews
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, image, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {
+          Svg == '' ?
+            <img className={styles.featureSvg} src={image} />
+            :
+            <Svg className={styles.featureSvg} role="img" />
+        }
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

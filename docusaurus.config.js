@@ -8,8 +8,8 @@ import { themes as prismThemes } from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'KGT Geo Personal Web',
-  tagline: 'kgtgeo',
+  title: 'Geo Personal Web',
+  tagline: 'ジェフリー　タインダル',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
